@@ -38,7 +38,7 @@ const contentWatch = {
 };
 
 export default defineConfig({
-  site: 'https://camanh.online',
+  site: 'https://camanh.site',
   output: 'static',
   devToolbar: { enabled: false },
   vite: { plugins: [reviewNote, contentWatch] },
