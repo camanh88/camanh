@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import InBloom from '../../components/InBloom.astro';
+import { nav } from '../../lib/data';
+---
+<Base current="bloom" title={nav.bloom.label}>
+  <main><InBloom /></main>
+</Base>

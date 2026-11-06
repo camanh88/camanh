@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import Contact from '../../components/Contact.astro';
+import { nav } from '../../lib/data';
+---
+<Base current="contact" title={nav.contact.label}>
+  <main><Contact /></main>
+</Base>

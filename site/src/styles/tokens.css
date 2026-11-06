@@ -1,0 +1,38 @@
+:root {
+  /* theme colours: "Theme Color" palette (Nov 5): deep green, lime, cream, burgundy, pink. Moss is a mid green made from the deep green and the lime, for large green blocks. */
+  --sage: #BCC76A;      /* lime: quiet backgrounds, borders, light details and text on dark blocks */
+  --orange: #922935;    /* burgundy: accents, section numbers, links (name kept from the first theme) */
+  --cream: #F7ECCD;     /* main background */
+  --brown: #132605;     /* deep green: main text, dark blocks (name kept from the first theme) */
+  --moss: #3B5319;      /* mid green: accent text, buttons, large green blocks (7:1 on cream) */
+  --pink: #E2A6A2;      /* soft pink: small highlights and flowers */
+  /* tints made from the colours */
+  --paper: var(--cream);
+  --paper-2: color-mix(in srgb, var(--cream) 55%, #fff);   /* a lighter paper for alternating bands, cards, headers */
+  --mist: color-mix(in srgb, var(--sage) 45%, var(--cream)); /* soft text and borders on dark blocks, photo frames */
+  --ink: var(--brown);
+  --ink-soft: color-mix(in srgb, var(--brown) 78%, var(--cream));
+  --dark: var(--brown);
+  --accent: var(--orange);
+  --hair: color-mix(in srgb, var(--brown) 16%, transparent);
+  --hair-light: rgb(247 236 205 / .22);
+  /* the timeline entries on the home page cycle through these */
+  --teal: var(--moss);
+  --tomato: var(--orange);
+  --forest: var(--brown);
+  --mustard: var(--sage);
+  --oxblood: color-mix(in srgb, var(--orange) 70%, var(--brown));
+  /* placeholder [ ... ] */
+  --ph-bg: #F8DDA6;
+  --ph-ink: #7A3A00;
+
+  --display: 'Cormorant Garamond', 'Iowan Old Style', Georgia, serif;
+  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --hand: 'Mynerve', cursive; /* only for {{vi: ...}} notes */
+  --script: 'Allura', 'Mynerve', cursive; /* signature hand */
+
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --wide: 84rem;
+  --section: clamp(6rem, 14vw, 13rem);
+  --ease: cubic-bezier(.22, .7, .2, 1);
+}

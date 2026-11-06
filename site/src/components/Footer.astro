@@ -1,0 +1,23 @@
+---
+import { nav, pages } from '../lib/data';
+---
+<footer class="ft">
+  <div class="ft-in">
+    <a class="fname" href={pages.home}>{nav.name.label}</a>
+    <ul class="flinks">
+      <li><a href={pages.making}>{nav.making.label}</a></li>
+      <li><a href={pages.bloom}>{nav.bloom.label}</a></li>
+      <li><a href={pages.contact}>{nav.contact.label}</a></li>
+    </ul>
+  </div>
+</footer>
+
+<style>
+  .ft { background: var(--paper-2); border-top: 1px solid var(--hair); padding: clamp(2rem, 4vw, 3rem) var(--gutter); }
+  .ft-in { display: grid; gap: 1rem; align-items: center; }
+  .fname { font-family: var(--display); font-size: 1.8rem; line-height: 1; text-decoration: none; }
+  .flinks { display: flex; flex-wrap: wrap; gap: .5rem 1.6rem; font-size: .92rem; }
+  .flinks a { text-decoration: none; padding: .4rem 0; display: inline-block; }
+  .flinks a:hover { color: var(--orange); }
+  @media (min-width: 800px) { .ft-in { grid-template-columns: 1fr auto; } .flinks { justify-content: flex-end; } }
+</style>
