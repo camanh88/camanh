@@ -32,5 +32,5 @@ Tokens in `site/src/styles/tokens.css`: deep green `#132605` (text, dark blocks,
 
 ## Open items
 
-- Final address (`SITE_URL`, `astro.config.mjs`); the site is `noindex` until `INDEXABLE` is set to true.
+- Address: https://camanh.online (`SITE_URL`, `astro.config.mjs`). The site is `noindex` until `INDEXABLE` is set to true.
 - See `site/PLACEHOLDERS.md`.
